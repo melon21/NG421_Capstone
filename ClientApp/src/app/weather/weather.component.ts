@@ -16,7 +16,15 @@ export class WeatherComponent implements OnInit {
     async ngOnInit() {
         this.weather = await this.http.get<Weather[]>(this.baseUrl + 'weather').toPromise();
     }
-
+     
+    async getWeather()
+    {
+      return this.http.get<Weather[]>('${this.baseUrl}weather').toPromise();
+    }
+    async addWeather()
+    {
+      return await this.http.post<Weather>('${this.baseUrl}weather', this.weather).toPromise();
+    }
 }
 interface Weather {
 weatherForcast: string;

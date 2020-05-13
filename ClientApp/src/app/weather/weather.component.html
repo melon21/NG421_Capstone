@@ -1,1 +1,28 @@
-<p>weather works!</p>
+<h1 id="table1">Weather App</h1>
+
+<p></p>
+
+<p *ngIf="!Weather"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="table1" *ngIf="weather">
+  <thead>
+    <tr>
+      <th>Weather Forcast</th>
+      <th>Temprature</th>
+      <th>Humidity</th>
+      <th>Time of day</th>
+      <th>Date</th>
+      <th>Wind</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let w of weather">
+      <td>{{ w.weatherForcast }}</td>
+      <td>{{ w.temprature }}</td>
+      <td>{{ w.humidity }}</td>
+      <td>{{ w.timeOfDay }}</td>
+      <td>{{ w.date  }}</td>
+      <td>{{ w.wind }}</td>
+    </tr>
+  </tbody>
+</table>

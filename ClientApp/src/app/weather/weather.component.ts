@@ -13,3 +13,6 @@ export class WeatherComponent implements OnInit {
   }
 
 }
+interface Weather {
+
+}

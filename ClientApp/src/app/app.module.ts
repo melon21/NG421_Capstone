@@ -38,6 +38,8 @@ import { WeatherComponent } from './weather/weather.component';
         { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
         { path: 'students', component: StudentsComponent, canActivate: [AuthorizeGuard] },
         { path: 'teachers', component: TeacherComponent, canActivate: [AuthorizeGuard] },
+        { path: 'weather', component: WeatherComponent, canActivate: [AuthorizeGuard] },
+
     ])
   ],
   providers: [

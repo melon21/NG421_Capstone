@@ -15,7 +15,7 @@ namespace capstone.Models
         public int temprature { get; set; }
         public int humidity { get; set; }
         public string timeOfDay { get; set; }
-        public string date { get; set; }
+        public DateTime date { get; set; }
         public int wind { get; set; }
         
     }

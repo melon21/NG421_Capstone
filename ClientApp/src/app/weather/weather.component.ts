@@ -1,5 +1,6 @@
 import { Component,Inject, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Weather} from 'src/app/interfaces/weather';
 
 @Component({
   selector: 'app-weather',

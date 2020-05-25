@@ -1,6 +1,6 @@
 import { Component,Inject, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Weather} from 'src/app/interfaces/weather';
+//import {weather} from 'src/app/interfaces/weather';
 
 @Component({
   selector: 'app-weather',
@@ -9,7 +9,7 @@ import { Weather} from 'src/app/interfaces/weather';
 })
 export class WeatherComponent implements OnInit {
   public weather: Weather[];
- public newWeather: Weather = {weatherForcast:'', temprature: 0, humidity:0, timeOfDay:'', date:0, wind:0}
+ //public newWeather: Weather = {weatherForcast:'', temprature: 0, humidity:0, timeOfDay:'', Date, wind:0}
 
   constructor(private http: HttpClient, @Inject('BASE_URL') private baseUrl: string) {
        
@@ -23,6 +23,6 @@ weatherForcast: string;
 temprature: number;
 humidity: number;
 timeOfDay: string;
-date: number;
+date: Date;
 wind: number;
 }

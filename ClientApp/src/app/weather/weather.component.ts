@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class WeatherComponent implements OnInit {
   public weather: Weather[];
- //public newWeather: Weather = {weatherForcast:'', temprature: 0, humidity:0, timeOfDay:'', Date, wind:0}
+ // public newWeather: Weather = {weatherForcast:'', temprature: 0, humidity:0, timeOfDay:'', Date, wind:0}
 
   constructor(private http: HttpClient, @Inject('BASE_URL') private baseUrl: string) {
        

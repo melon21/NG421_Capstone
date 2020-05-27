@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Provide sufficient contrast against white background */
+
+body{
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
 a {
   color: #0366d6;
 }

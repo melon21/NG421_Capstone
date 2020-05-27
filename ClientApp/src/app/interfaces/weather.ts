@@ -4,6 +4,6 @@ export interface Weather {
     temprature: number;
     humidity: number;
     timeOfDay:string;
-    date:Date;
+    date: Date;
     wind: number;
 }

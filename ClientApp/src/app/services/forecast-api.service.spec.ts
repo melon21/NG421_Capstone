@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ForecastService } from './forecast.service';
+import { ForecastApiService } from './forecast-api.service';
 
-describe('ForecastService', () => {
+describe('ForecastApiService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: ForecastService = TestBed.get(ForecastService);
+    const service: ForecastApiService = TestBed.get(ForecastApiService);
     expect(service).toBeTruthy();
   });
 });

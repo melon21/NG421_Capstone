@@ -4,9 +4,9 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class ForecastService {
+export class LocationApiService {
 
-  API_URL = 'https://dataservice.accuweather.com/forecasts/v1/daily/1day/331131?apikey=RF9jPHpFC8IXHNAZUGrdC9BPQO93mzI8';
+  API_URL = 'http://dataservice.accuweather.com/locations/v1/cities/search?apikey=RF9jPHpFC8IXHNAZUGrdC9BPQO93mzI8&q=Lubbock';
   API_KEY = 'RF9jPHpFC8IXHNAZUGrdC9BPQO93mzI8';
   constructor(private httpService: HttpClient) {}
 

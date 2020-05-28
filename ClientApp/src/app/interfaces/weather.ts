@@ -1,6 +1,6 @@
 export interface Weather {
     
-    weatherForcast: string;
+    weatherForecast: string;
     temprature: number;
     humidity: number;
     timeOfDay:string;

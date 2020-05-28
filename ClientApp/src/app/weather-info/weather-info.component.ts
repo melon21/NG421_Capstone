@@ -9,7 +9,7 @@ import {Weather} from 'src/app/interfaces/weather';
 })
 export class WeatherInfoComponent implements OnInit {
   public weather: Weather[];
-  public newWeather: Weather = {weatherForcast:'', temprature: 0, humidity:0, timeOfDay:'', date: new Date (), wind:0}
+  public newWeather: Weather = {weatherForecast:'', temprature: 0, humidity:0, timeOfDay:'', date: new Date (), wind:0}
 
   constructor(private http: HttpClient, @Inject('BASE_URL') private baseUrl: string) {
        

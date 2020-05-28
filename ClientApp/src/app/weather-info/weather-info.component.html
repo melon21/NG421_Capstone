@@ -1,4 +1,4 @@
-<h1 id="tableLabel">Weather Forcast</h1>
+<h1 id="tableLabel">Weather Forecast</h1>
 
 <p></p>
 
@@ -7,7 +7,7 @@
 <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="weather">
   <thead>
     <tr>
-      <th>Weather Forcast</th>
+      <th>Weather Forecast</th>
       <th>Temprature</th>
       <th>Humidity</th>
       <th>Time of day</th>
@@ -17,7 +17,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let s of weather">
-      <td>{{ s.weatherForcast }}</td>
+      <td>{{ s.weatherForecast }}</td>
       <td>{{ s.temprature }}</td>
       <td>{{ s.humidity }}</td>
       <td>{{ s.timeOfDay }}</td>

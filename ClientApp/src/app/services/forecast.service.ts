@@ -6,7 +6,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 })
 export class ForecastService {
 
-  API_URL = 'https://dataservice.accuweather.com/forecasts/v1/daily/1day/331131?apikey=RF9jPHpFC8IXHNAZUGrdC9BPQO93mzI8&language=en-us&details=false&metric=false';
+  API_URL = 'https://dataservice.accuweather.com/forecasts/v1/daily/1day/331131?apikey=RF9jPHpFC8IXHNAZUGrdC9BPQO93mzI8';
   API_KEY = 'RF9jPHpFC8IXHNAZUGrdC9BPQO93mzI8';
   constructor(private httpService: HttpClient) {}
 

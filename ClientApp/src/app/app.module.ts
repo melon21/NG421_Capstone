@@ -11,13 +11,15 @@ import { ApiAuthorizationModule } from 'src/api-authorization/api-authorization.
 import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
 import { WeatherInfoComponent } from './weather-info/weather-info.component';
+import { LocationsComponent } from './locations/locations.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    WeatherInfoComponent
+    WeatherInfoComponent,
+    LocationsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -27,6 +29,7 @@ import { WeatherInfoComponent } from './weather-info/weather-info.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
         { path: 'weather-info', component: WeatherInfoComponent, canActivate: [AuthorizeGuard] },
+        { path: 'locations', component: LocationsComponent, canActivate: [AuthorizeGuard]},
 
     ])
   ],

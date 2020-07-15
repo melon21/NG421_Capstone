@@ -6,7 +6,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 })
 export class LocationApiService {
   locationKey: string;
-  API_URL = 'http://dataservice.accuweather.com/locations/v1/cities/search?apikey=RF9jPHpFC8IXHNAZUGrdC9BPQO93mzI8&q=Lubbock';
+  API_URL = 'https://dataservice.accuweather.com/locations/v1/cities/search';
   API_KEY = 'RF9jPHpFC8IXHNAZUGrdC9BPQO93mzI8';
   constructor(private httpService: HttpClient) {}
 

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -12,10 +12,12 @@ export class LocationApiService {
 
   get(searchTerm: string): Promise<any> {
 
+    const headers = new HttpHeaders();
+    headers.append('X-Requested-With', 'XMLHttpRequest');
     const params: HttpParams = new HttpParams()
-    .set('api_key', this.API_KEY)
-    .set('query', searchTerm);
+      .set('apikey', this.API_KEY)
+      .set('q', searchTerm);
 
-    return this.httpService.get<any>(this.API_URL, {params}).toPromise();
+    return this.httpService.get<any>(`${this.API_URL}`, {headers, params}).toPromise();
   }
 }

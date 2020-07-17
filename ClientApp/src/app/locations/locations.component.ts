@@ -8,13 +8,14 @@ import { LocationApiService } from '../services/location-api.service';
 })
 export class LocationsComponent implements OnInit {
 location = '';
+data: any[] = [];
   constructor(private locationsApiService: LocationApiService) { }
 
   ngOnInit() {
   }
 async search() {
 
- const data = await this.locationsApiService.get(this.location);
- console.log(data);
+ this.data = await this.locationsApiService.get(this.location);
+
 }
 }

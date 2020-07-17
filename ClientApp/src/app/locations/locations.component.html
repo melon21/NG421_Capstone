@@ -1,1 +1,8 @@
 <input type='text' [(ngModel)]='location' (keyup.enter)='search()'>
+<div *ngFor="let location of data">
+    <p>{{location.EnglishName}}</p>
+    <p>{{location.key}}</p>
+    <p>{{location.Country.EnglishName}}</p>
+    <p>{{location.AdministrativeArea.EnglishName}}</p>
+    <p>{{location.Key}}</p>
+</div>

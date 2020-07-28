@@ -1,4 +1,7 @@
+<h1 id="tableLabel">Locations</h1>
+
 <input type='text' [(ngModel)]='location' (keyup.enter)='search()'>
+<button click="save()">Save</button>
 <div *ngFor="let location of data">
     <p>{{location.EnglishName}}</p>
     <p>{{location.key}}</p>
@@ -6,3 +9,23 @@
     <p>{{location.AdministrativeArea.EnglishName}}</p>
     <p>{{location.Key}}</p>
 </div>
+<p *ngIf="!location"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="location">
+  <thead>
+    <tr>
+      <th>locationName</th>
+      <th>key</th>
+      <th>country</th>
+      <th>adminArea</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of location">
+      <td>{{ s.locationName }}</td>
+      <td>{{ s.key }}</td>
+      <td>{{ s.country }}</td>
+      <td>{{ s.adminArea }}</td>
+    </tr>
+  </tbody>
+</table>

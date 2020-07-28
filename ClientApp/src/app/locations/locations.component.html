@@ -1,7 +1,8 @@
+
 <h1 id="tableLabel">Locations</h1>
 
 <input type='text' [(ngModel)]='location' (keyup.enter)='search()'>
-<button click="save()">Save</button>
+<button [(ngModel)]="newLocation" click="save()">Save</button>
 <div *ngFor="let location of data">
     <p>{{location.EnglishName}}</p>
     <p>{{location.key}}</p>

@@ -13,7 +13,7 @@ namespace capstone.Models
         [Key]
         public string locationName { get; set; }
         public int key { get; set; }
-        public int country { get; set; }
+        public string country { get; set; }
         public string adminArea { get; set; }
         
     }

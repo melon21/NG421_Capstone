@@ -12,9 +12,8 @@ namespace capstone.Models
          [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
         public string locationName { get; set; }
-        public int key { get; set; }
         public string country { get; set; }
         public string adminArea { get; set; }
-        
+         public int key { get; set; }
     }
 }

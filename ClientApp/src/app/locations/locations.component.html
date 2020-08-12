@@ -2,7 +2,26 @@
 <h1 id="tableLabel">Locations</h1>
 
 <input type='text' [(ngModel)]='location' (keyup.enter)='search()'>
-<button click="save()">Save</button>
+<button onClick="Save()">Save</button>
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="location">
+  <thead>
+    <tr>
+      <th>locationName</th>
+      <th>country</th>
+      <th>adminArea</th>
+      <th>key</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let l of location">
+      <td>{{ l.locationName }}</td>
+      <td>{{ l.country }}</td>
+      <td>{{ l.adminArea }}</td>
+      <td>{{ l.key }}</td>
+    </tr>
+  </tbody>
+</table>
+
 <div *ngFor="let location of data">
     <p>{{location.EnglishName}}</p>
     <p>{{location.key}}</p>
@@ -12,21 +31,4 @@
 </div>
 <p *ngIf="!location"><em>Type in location to get data back</em></p>
 
-<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="location">
-  <thead>
-    <tr>
-      <th>locationName</th>
-      <th>key</th>
-      <th>country</th>
-      <th>adminArea</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let s of location">
-      <td>{{ s.locationName }}</td>
-      <td>{{ s.key }}</td>
-      <td>{{ s.country }}</td>
-      <td>{{ s.adminArea }}</td>
-    </tr>
-  </tbody>
-</table>
+

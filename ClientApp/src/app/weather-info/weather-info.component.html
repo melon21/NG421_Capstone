@@ -26,3 +26,11 @@
     </tr>
   </tbody>
 </table>
+
+<div *ngFor="let weather of newWeather">
+  <p>{{weather.weatherForecast}}</p>
+  <p>{{weather.temprature}}</p>
+  <p>{{weather.Humidity}}</p>
+  <p>{{weather.AdministrativeArea.EnglishName}}</p>
+  <p>{{weather.Key}}</p>
+</div>

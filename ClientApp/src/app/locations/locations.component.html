@@ -2,7 +2,7 @@
 <h1 id="tableLabel">Locations</h1>
 
 <input type='text' [(ngModel)]='location' (keyup.enter)='search()'>
-<button onClick="Save()">Save</button>
+<button onClick="save()">Save</button>
 <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="location">
   <thead>
     <tr>

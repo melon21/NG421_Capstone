@@ -11,12 +11,11 @@ namespace capstone.Models
     {
          [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
-        public string weatherForecast { get; set; }
-        public int temprature { get; set; }
-        public int humidity { get; set; }
-        public string timeOfDay { get; set; }
+        public string day { get; set; }
+        public string night { get; set; }
+        public int maxTemp { get; set; }
+        public int minTemp { get; set; }
         public DateTime date { get; set; }
-        public int wind { get; set; }
         
     }
 }

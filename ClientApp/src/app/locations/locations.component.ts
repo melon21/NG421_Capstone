@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LocationApiService } from '../services/location-api.service';
 import { Locations } from 'src/app/interfaces/locations';
-
+import { MatTableDataSource } from '@angular/material/table';
 @Component({
   selector: 'app-locations',
   templateUrl: './locations.component.html',

@@ -15,8 +15,8 @@ namespace capstone.Data
     public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>
     {
         public IConfiguration Configuration { get; }
-        public DbSet<Weather> Weather {get; set;}
-        public DbSet<Locations> Locations {get; set;}
+        public DbSet<Weather> Weather {get; set; }
+        public DbSet<Locations> Locations {get; set; }
         public ApplicationDbContext(
             DbContextOptions options,
             IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)

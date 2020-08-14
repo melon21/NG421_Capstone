@@ -20,6 +20,7 @@ async search() {
 
 }
 async save() {
-  //this.data = await this.locationsApiService.post()
+  this.data = await this.locationsApiService.post(this.location);
+  console.log(this.data);
 }
 }

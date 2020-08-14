@@ -19,4 +19,7 @@ async search() {
  this.data = await this.locationsApiService.get(this.location);
 
 }
+async save() {
+  //this.data = await this.locationsApiService.post()
+}
 }

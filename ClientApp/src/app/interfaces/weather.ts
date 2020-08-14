@@ -1,9 +1,10 @@
 export interface Weather {
-    
-    weatherForecast: string;
-    temprature: number;
-    humidity: number;
-    timeOfDay:string;
-    date: Date;
-    wind: number;
+
+minTemp: number;
+maxTemp: number;
+day: string;
+night:string;
+humidity: number;
+date: Date;
+wind: number;
 }

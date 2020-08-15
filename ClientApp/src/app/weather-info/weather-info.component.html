@@ -36,35 +36,35 @@
   <p>{{weather.Key}}</p>
 </div> -->
 
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" class="mx-auto" style="width: 100%"  class="table table-striped light-grey" class="shadow p-3 mb-5 bg-transparent text-center">
+<table mat-table [dataSource]="dataSource" class="text-center" class="mat-elevation-z8" class="mx-auto" style="width: 100%"  class="table table-striped light-grey" class="shadow p-3 mb-5 bg-transparent text-center">
 
 
-  <ng-container matColumnDef="day" class="text-center">
-    <th mat-header-cell *matHeaderCellDef>Day</th>
+  <ng-container matColumnDef="day">
+    <th mat-header-cell *matHeaderCellDef class="text-center">Day</th>
     <td mat-cell *matCellDef="let element"> {{element.day}} </td>
   </ng-container>
 
 
   <ng-container matColumnDef="night">
-    <th mat-header-cell *matHeaderCellDef>Night</th>
+    <th mat-header-cell *matHeaderCellDef class="text-center">Night</th>
     <td mat-cell *matCellDef="let element"> {{element.night}} </td>
   </ng-container>
 
 
   <ng-container matColumnDef="maxTemp">
-    <th mat-header-cell *matHeaderCellDef> Max Temp </th>
+    <th mat-header-cell *matHeaderCellDef class="text-center"> Max Temp </th>
     <td mat-cell *matCellDef="let element"> {{element.maxTemp}} °F </td>
   </ng-container>
 
 
   <ng-container matColumnDef="minTemp">
-    <th mat-header-cell *matHeaderCellDef> Min Temp </th>
+    <th mat-header-cell *matHeaderCellDef class="text-center"> Min Temp </th>
     <td mat-cell *matCellDef="let element"> {{element.minTemp}} °F </td>
   </ng-container>
 
 
   <ng-container matColumnDef="date">
-    <th mat-header-cell *matHeaderCellDef> Date </th>
+    <th mat-header-cell *matHeaderCellDef class="text-center"> Date </th>
     <td mat-cell *matCellDef="let element"> {{element.date}} </td>
   </ng-container>
 

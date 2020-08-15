@@ -33,9 +33,6 @@ export class WeatherInfoComponent implements OnInit {
         this.newWeather[0].minTemp = this.weather['DailyForecasts'][0]['Temperature']['Minimum']['Value'];
         console.log(this.newWeather);
 
-        this.newWeather[0].minTemp = this.weather['DailyForecasts'][0]['Temperature']['Minimum']['Value'];
-        console.log(this.newWeather);
-
         this.dataSource = new MatTableDataSource(this.newWeather);
     }
 }

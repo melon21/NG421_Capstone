@@ -15,7 +15,13 @@ namespace capstone.Controllers
     [Route("[controller]")]
     public class LocationsController : ControllerBase
     {
+        private ApplicationDbContext _dbContext;
+        public LocationsController(ApplicationDbContext dbContext) {
 
+            dbContext = _dbContext;
+            
+        }
+        
         [HttpGet]
         public IEnumerable<Locations> Get()
         {

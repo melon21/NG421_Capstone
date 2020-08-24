@@ -1,42 +1,4 @@
-<!-- <h1 id="tableLabel">Weather Forecast</h1>
-
-<p></p>
-
-<p *ngIf="!weather"><em>Loading...</em></p>
-
-<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="newWeather">
-  <thead>
-    <tr>
-      <th>Weather Forecast</th>
-      <th>Temprature</th>
-      <th>Humidity</th>
-      <th>Time of day</th>
-      <th>Date</th>
-      <th>Wind</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let s of newWeather">
-      <td>{{ s.weatherForecast }}</td>
-      <td>{{ s.temprature }}</td>
-      <td>{{ s.humidity }}</td>
-      <td>{{ s.timeOfDay }}</td>
-      <td>{{ s.date  }}</td>
-      <td>{{ s.wind }}</td>
-
-    </tr>
-  </tbody>
-</table> -->
-
-<!-- <div *ngFor="let weather of newWeather">
-  <p>{{weather.weatherForecast}}</p>
-  <p>{{weather.temprature}}</p>
-  <p>{{weather.Humidity}}</p>
-  <p>{{weather.AdministrativeArea.EnglishName}}</p>
-  <p>{{weather.Key}}</p>
-</div> -->
-
-<table mat-table [dataSource]="dataSource" class="text-center" class="mat-elevation-z8" class="mx-auto" style="width: 100%"  class="table table-striped light-grey" class="shadow p-3 mb-5 bg-transparent text-center">
+ <table mat-table [dataSource]="dataSource" class="text-center" class="mat-elevation-z8" class="mx-auto" style="width: 100%"  class="table table-striped light-grey" class="shadow p-3 mb-5 bg-transparent text-center">
 
 
   <ng-container matColumnDef="day">
